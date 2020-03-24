@@ -1,0 +1,13 @@
+{
+  "name": "Postal",
+  "displayName": "Postal",
+  "expo": {
+    "name": "Postal",
+    "slug": "expo-template-bare",
+    "privacy": "unlisted",
+    "sdkVersion": "36.0.0",
+    "version": "1.0.0",
+    "entryPoint": "universal/index.js",
+    "platforms": ["ios", "android", "web"]
+  }
+}
