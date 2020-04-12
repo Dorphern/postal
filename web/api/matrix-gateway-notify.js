@@ -41,7 +41,7 @@ const messagesFromBody = ({ notification }) => {
 
   const devices = notification.devices.filter(matchesDeviceId)
 
-  const body = getMessageBody(notification.content)
+  const body = getMessageBody(notification.content || {})
 
   if (body == null) {
     return []
@@ -59,6 +59,7 @@ const messagesFromBody = ({ notification }) => {
     body,
     channelId: null, // use default
     data: { roomId, eventId },
+    _displayInForeground,
   }))
 }
 
