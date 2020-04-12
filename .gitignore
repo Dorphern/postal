@@ -55,7 +55,7 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-app/.expo/*
+app/.expo
 
 todo.md
 .env

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/_matrix/push/v1/notify",
+      "dest": "api/matrix-gateway-notify.js"
+    }
+  ],
+  "alias": ["postal-im"]
+}

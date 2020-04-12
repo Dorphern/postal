@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": ""
+  },
+  "private": true,
+  "dependencies": {
+    "expo-server-sdk": "^3.5.0"
+  }
+}
