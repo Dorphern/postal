@@ -57,7 +57,7 @@ const messagesFromBody = ({ notification }) => {
     title: roomName || roomId,
     subtitle: senderDisplayName || 'New message',
     body,
-    channelId: null, // use default
+    channelId: 'messages', // use default
     data: { roomId, eventId },
     _displayInForeground,
   }))

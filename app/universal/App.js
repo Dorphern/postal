@@ -10,6 +10,8 @@ import { store, persistor } from './state/configureStore'
 import { getAuthState, connectToServer } from './state/auth'
 import { selectTheme } from './state/settings'
 
+import NotificationHandler from './NotificationHandler'
+
 import Navigator from './Navigator'
 
 const themeMap = {
@@ -40,6 +42,7 @@ const Main = () => {
   return (
     <ThemeProvider theme={theme}>
       <AppFrame>
+        <NotificationHandler />
         {Platform.OS === 'android' && <AndroidStatusBarHeight />}
         <SafeArea behavior="padding" enabled>
           <AppBackground>{storageMigrated && <Navigator />}</AppBackground>
@@ -67,7 +70,7 @@ const AppFrame = styled.View`
 `
 
 const AppBackground = styled.View`
-  background-color: ${p => p.theme.colors.appBg};
+  background-color: ${(p) => p.theme.colors.appBg};
   flex: 1;
   justify-content: center;
   border-radius: 15px;

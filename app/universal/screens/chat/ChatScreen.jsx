@@ -18,10 +18,10 @@ const ChatScreen = () => {
   const latestMessage = useLatestMessage(roomId)
 
   useEffect(() => {
-    if (endIsVisible) {
+    if (latestMessage?.eventId && endIsVisible) {
       updateReadMarker(latestMessage)
     }
-  }, [latestMessage.eventId, endIsVisible])
+  }, [latestMessage?.eventId, endIsVisible])
 
   return (
     <ChatScreenCard
