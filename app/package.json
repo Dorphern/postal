@@ -22,7 +22,7 @@
     "expo-sqlite": "^8.0.0",
     "expo-web-browser": "^8.0.0",
     "lodash": "^4.17.15",
-    "matrix-js-sdk": "^2.4.6",
+    "matrix-js-sdk": "^12.4.1",
     "ms": "^2.1.2",
     "prop-types": "^15.7.2",
     "pubsub-js": "^1.8.0",
